@@ -1,0 +1,8 @@
+OHPE-digitrade
+
+int - kokonaisluku
+float - desimaaliluku
+string - merkkijono
+chat - merkki
+bool - true/false
+var
