@@ -47,7 +47,7 @@ namespace task_3
                     {
                         Console.WriteLine($"Syötit luvun {evaluatedNumber}, se on parillinen.");
                     }
-                    if (evaluatedNumber % 2 == -1)
+                    if (evaluatedNumber % 2 == -1 )
                     {
                         Console.WriteLine($"Syötit luvun {evaluatedNumber}, se on pariton.");
                     }
