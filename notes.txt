@@ -6,3 +6,13 @@ string - merkkijono
 chat - merkki
 bool - true/false
 var
+
+pienempi kuin <
+suurempi kuin >
+pienempi tai yhtäsuuri <=
+suurempi tai yhtäsuuri >=
+yhtäsuuri ==
+erisuuri !=
+NOT !
+
+
