@@ -10,28 +10,41 @@ namespace conditional_statement
     {
         static void Main(string[] args)
         {
+            //Define instruction
             Console.WriteLine("Ohjelma tulostaa positiivinen, negatiivinen tai nolla.");
-            Console.Write("Syötä luku: ");
-            string userInput;
-            userInput = Console.ReadLine();
+            bool isNumber;
+            do
+            {
 
-            int evaluatedNumber;
-            int.TryParse(userInput, out evaluatedNumber);
+                Console.Write("Syötä luku: ");
+                // Define variables
+                string userInput;
+                userInput = Console.ReadLine();
 
-            if(evaluatedNumber < 0)
-            {
-                Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen");
-            }
-            else if(evaluatedNumber > 0)
-            {
-                Console.WriteLine($"Numero {evaluatedNumber} on positiivinen");
-            }
-            else if(evaluatedNumber = 0)
-            {
-                Console.WriteLine($"Numero {evaluatedNumber} on nolla");
-            }
-            Console.WriteLine("Syötit arvon {0}", userInput);
-            Console.WriteLine($"Syötit arvon {userInput}");
+                int evaluatedNumber;
+                isNumber = int.TryParse(userInput, out evaluatedNumber);
+
+                // Program logic
+                if (isNumber == true)
+                {
+                    if (evaluatedNumber < 0)
+                    {
+                        Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen");
+                    }
+                    else if (evaluatedNumber > 0)
+                    {
+                        Console.WriteLine($"Numero {evaluatedNumber} on positiivinen");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Numero {evaluatedNumber} on nolla");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Syötit muuta kuin numeron");
+                }
+            } while (isNumber == true);
             Console.ReadKey();
         }
     }
