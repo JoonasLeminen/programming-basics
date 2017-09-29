@@ -11,7 +11,7 @@ namespace task_3
         static void Main(string[] args)
         {
             //Define instruction
-            Console.WriteLine("Ohjelma tulostaa positiivinen, negatiivinen tai nolla.");
+            Console.WriteLine("Ohjelma tulostaa positiivinen, negatiivinen tai nolla/parillisen tai parittoman.");
             bool isNumber;
             do
             {
