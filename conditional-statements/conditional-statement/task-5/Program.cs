@@ -10,12 +10,19 @@ namespace task_5
     {
         static void Main(string[] args)
         {
+
+            string firstName = "Uusi";
+            string lastName = "Asiakas";
+            Console.WriteLine("Anna nimesi: ");
+            firstName = Console.ReadLine();
+            lastName = Console.ReadLine();
+            Console.WriteLine("Nimi: " + firstName + " " + lastName);
+
             int discount = 0;
             int price = 16;
             bool discounted = false;
-
             
-            Console.Write("Ikä: ?");
+            Console.Write("Anna ikäsi: ");
             int age = int.Parse(Console.ReadLine());
             
             if (age < 7)
@@ -23,16 +30,18 @@ namespace task_5
                 discount = 100;
                 discounted = true;
             }
-            else if {age >= 7 && <= 15 && discounted = false}
+            else if (age >= 7 && <= 15 && discounted = false);
             {
                 discount = discount + 50;
                 discounted = true;
             }
-            else if (age >= 65 && discounted = false)
+            
+            else if (age >= 65 && discounted = false);
             {
                 discount = discount + 50;
                 discounted = true;
             }
+
         }
     }
 }
