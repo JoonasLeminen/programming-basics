@@ -10,15 +10,29 @@ namespace task_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ohjelma laskee ensimmäisen ja parittoman ja parillisen luvun summan N:stä.");
+            Console.WriteLine("Ohjelma laskee ensimmäisen parittoman ja parillisen luvun summan N:stä.");
             string userInput = Console.ReadLine();
             int number = int.Parse(userInput);
             int i = 1;
-            int f = 0;
-            do
-            {
+            int pariton = 1;
+            int parillinen = 1;
 
-            } while ();
+            if (number < 1)
+            {
+                Console.WriteLine("Vastaus: Määrittelemätön.");
+            }
+            else
+            {
+                do
+                {
+                    pariton = 0;
+                    parillinen = 0;
+                    i = i + 1;
+                } while (number < i);
+                Console.WriteLine($"Parittomien summa: {pariton}");
+                Console.WriteLine($"Parillisten summa: {parillinen}");
+            }
+            Console.ReadKey();
         }
     }
 }

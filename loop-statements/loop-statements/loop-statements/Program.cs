@@ -15,13 +15,21 @@ namespace loop_statements
             int number = int.Parse(userInput);
             int i = 0;
             int f = 1;
-            do
-            {
-                i = i + 1;
-                f = f * i;
-            } while (i < number);
 
-            Console.WriteLine($"\tSyötit: {number}\n\tVastaus: {f}");
+            if (number < 1)
+            {
+                Console.WriteLine("Vastaus: Määrittelemätön.");
+            }
+            else
+            {
+                do
+                {
+                    i = i + 1;
+                    f = f * i;
+                } while (i < number);
+
+                Console.WriteLine($"\tSyötit: {number}\n\tVastaus: {f}");
+            }
             Console.ReadKey();
         }
     }
