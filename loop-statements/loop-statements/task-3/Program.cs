@@ -14,8 +14,8 @@ namespace task_3
             string userInput = Console.ReadLine();
             int number = int.Parse(userInput);
             int i = 1;
-            int pariton = 1;
-            int parillinen = 1;
+            int oddSum = 0;
+            int evenSum = 0;
 
             if (number < 1)
             {
@@ -25,13 +25,19 @@ namespace task_3
             {
                 do
                 {
-                    pariton = 0;
-                    parillinen = 0;
-                    i = i + 1;
-                } while (number < i);
-                Console.WriteLine($"Parittomien summa: {pariton}");
-                Console.WriteLine($"Parillisten summa: {parillinen}");
+                    if (i % 2 == 0)
+                    {
+                        evenSum = evenSum + i;
+                    }
+                    else
+                    {
+                        oddSum = oddSum + i;
+                    }
+                    i++;
+                } while (i <= number);
             }
+            Console.WriteLine($"Parittomien summa: {oddSum}");
+            Console.WriteLine($"Parillisten summa: {evenSum}");
             Console.ReadKey();
         }
     }

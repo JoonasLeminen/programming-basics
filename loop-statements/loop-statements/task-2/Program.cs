@@ -18,7 +18,7 @@ namespace task_2
 
             if (number < 1)
             {
-                Console.WriteLine("Vastaus: Määrittememätön.");
+                Console.WriteLine("Vastaus: Määrittelemätön.");
             }
             else
             {
