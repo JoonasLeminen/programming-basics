@@ -15,21 +15,19 @@ namespace task_2
             int number = int.Parse(userInput);
             int i = 1;
             int f = 1;
+            int k = 1;
 
-            if (number < 1)
+            if (number < 0)
             {
-                Console.WriteLine("Vastaus: Määrittelemätön.");
+                k = -1;
             }
-            else
-            {
                 do
                 {
                     i = i + 1;
                     f = f + i;
-                } while (i < number);
+                } while (i < number*k);
 
-                Console.Write($"Syötit: {number}, Summa: {f}");
-            }
+            Console.Write($"Syötit: {number}, Summa: {f*k}");
             Console.ReadLine();
         }
     }

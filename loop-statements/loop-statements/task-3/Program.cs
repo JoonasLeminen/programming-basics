@@ -16,13 +16,12 @@ namespace task_3
             int i = 1;
             int oddSum = 0;
             int evenSum = 0;
+            int k = 1;
 
-            if (number < 1)
+            if (number < 0)
             {
-                Console.WriteLine("Vastaus: Määrittelemätön.");
+                k = -1;
             }
-            else
-            {
                 do
                 {
                     if (i % 2 == 0)
@@ -34,10 +33,9 @@ namespace task_3
                         oddSum = oddSum + i;
                     }
                     i++;
-                } while (i <= number);
-            }
-            Console.WriteLine($"Parittomien summa: {oddSum}");
-            Console.WriteLine($"Parillisten summa: {evenSum}");
+                } while (i <= number*k);
+            Console.WriteLine($"Parittomien summa: {oddSum*k}");
+            Console.WriteLine($"Parillisten summa: {evenSum*k}");
             Console.ReadKey();
         }
     }
