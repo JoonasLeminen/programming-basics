@@ -10,7 +10,7 @@ namespace task_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Anna 2 lukua. Funktio palauttaa pienemmän");
+            Console.WriteLine("Anna 2 lukua. Funktio palauttaa pienemmän.");
             Console.WriteLine("Anna ensimmäinen luku: ");
             string userInput = Console.ReadLine();
             int x = int.Parse(userInput);
