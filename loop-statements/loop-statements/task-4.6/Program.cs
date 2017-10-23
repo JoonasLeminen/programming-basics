@@ -18,7 +18,7 @@ namespace task_4._6
             {
                 int k = rnd.Next(1,7);
                 if (k >= 6)
-                    j = j + 1;
+                    j++;
             }
             Console.WriteLine($"Heitit noppaa tuhat kertaa ja sait kutosen {j} kertaa.");
             Console.ReadKey();
