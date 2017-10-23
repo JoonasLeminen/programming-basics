@@ -15,19 +15,21 @@ namespace task_4._5
 
             for (int i = 1; i <= 13; i++)
             {
-                if (rnd.Next(10) <= 4)
+                int k = rnd.Next(10);
+                if (k <= 4)
                 {
                     Console.WriteLine("1");
                 }
-                else if (rnd.Next(10) > 4 && rnd.Next(10) < 7)
+                else if (k <= 6)
                 {
                     Console.WriteLine("x");
                 }
-                else if (rnd.Next(10) >= 7)
+                else
                 {
                     Console.WriteLine("2");
                 }
             }
+            Console.ReadKey();
         }
     }
 }

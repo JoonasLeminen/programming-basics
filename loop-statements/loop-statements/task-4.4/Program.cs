@@ -12,7 +12,7 @@ namespace task_4._4
         {
             Console.WriteLine("Montako kertaa haluat heittää kolikkoa?");
             string userInput = Console.ReadLine();
-            int number = int.Parse(userInput);
+            int number = int.Parse(userInput); 
             int i = 1;
             int kruuna = 0;
             int klaava = 0;

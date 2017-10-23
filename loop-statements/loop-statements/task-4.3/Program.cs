@@ -15,6 +15,8 @@ namespace task_4._3
 
             for (int i = 1; i <= 4; i++) 
             {
+                Console.Write($"Rivi{i}: ");
+
                 for (int k = 1; k <= 5; k++)
                 {
                     if (k < 5)
