@@ -19,13 +19,17 @@ namespace task_2
             int y = int.Parse(userInput2);
 
             int p = Calculator(x, y);
-            if (p == x)
+            if (p == x && x != y)
             {
                 Console.WriteLine($"Luku {x} on pienempi kuin {y}");
             }
-            else
+            else if (p == y && y != x)
             {
                 Console.WriteLine($"Luku {y} on pienempi kuin {x}");
+            }
+            else
+            {
+                Console.WriteLine($"Luku {y} on yhtäsuuri kuin {x}");
             }
             Console.ReadKey();
         }

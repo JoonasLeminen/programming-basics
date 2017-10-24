@@ -15,12 +15,13 @@ namespace task_4._5
 
             for (int i = 1; i <= 13; i++)
             {
-                int k = rnd.Next(10);
-                if (k <= 4)
+                Console.Write($"Rivi {i}: ");
+                Double k = rnd.NextDouble();
+                if (k <= 0.4)
                 {
                     Console.WriteLine("1");
                 }
-                else if (k <= 6)
+                else if (k <= 0.6)
                 {
                     Console.WriteLine("x");
                 }

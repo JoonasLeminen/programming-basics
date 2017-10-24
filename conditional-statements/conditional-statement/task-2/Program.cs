@@ -15,24 +15,20 @@ namespace task_2
             bool isNumber;
             do
             {
-
                 Console.Write("Syötä luku: ");
                 // Define variables
                 string userInput;
                 userInput = Console.ReadLine();
-
                 int evaluatedNumber;
                 isNumber = int.TryParse(userInput, out evaluatedNumber);
-
                 // Program logic
                 if (evaluatedNumber % 2 == 1)
                 {
                     Console.WriteLine($"Syötit luvun {evaluatedNumber}, se on pariton.");
                 }
-                else if(evaluatedNumber % 2 == 0)
+                else if (evaluatedNumber % 2 == 0)
                 {
                     Console.WriteLine($"Syötit luvun {evaluatedNumber}, se on parillinen.");
-
                 }
                 else
                 {

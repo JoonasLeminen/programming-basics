@@ -26,7 +26,6 @@ namespace task_2
                     i = i + 1;
                     f = f + i;
                 } while (i < number*k);
-
             Console.Write($"Syötit: {number}, Summa: {f*k}");
             Console.ReadLine();
         }

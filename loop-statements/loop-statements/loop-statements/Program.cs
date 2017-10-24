@@ -16,7 +16,7 @@ namespace loop_statements
             int i = 0;
             int f = 1;
 
-            if (number < 1)
+            if (number < 0)
             {
                 Console.WriteLine("Vastaus: Määrittelemätön.");
             }

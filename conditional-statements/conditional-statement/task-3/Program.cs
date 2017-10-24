@@ -15,15 +15,12 @@ namespace task_3
             bool isNumber;
             do
             {
-
                 Console.Write("Syötä luku: ");
                 // Define variables
                 string userInput;
                 userInput = Console.ReadLine();
-
                 int evaluatedNumber;
                 isNumber = int.TryParse(userInput, out evaluatedNumber);
-
                 // Program logic
                 if (isNumber == true)
                 {

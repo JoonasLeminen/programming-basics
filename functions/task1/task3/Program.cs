@@ -11,22 +11,30 @@ namespace task3
         static void Main(string[] args)
         {
             Console.WriteLine("Funktiot - task3.");
-
-            int n;
-            while (true)
+            int retNumber = numberFromRange(1, 10);
+            Console.WriteLine($"Syöttämäsi luku {retNumber} on sallittu");
+            Console.ReadKey();
+        }
+        static int numberFromRange(int lowerBound, int upperBound)
+        {
+            bool isNumber;
+            int input = 0;
+            int ret = 0;
+            do
             {
-                Console.WriteLine("Anna luku: ");
-                string userInput = Console.ReadLine();
-                n = int.Parse(userInput);
-                if (n == retNumber)
+                Console.WriteLine("Syötä luku väliltä 1-10: ");
+                isNumber = int.TryParse(Console.ReadLine(), out input);
+                if (input >= lowerBound && input <= upperBound)
                 {
-                    Console.WriteLine((""), n);
+                    ret = input;
+                    break;
                 }
                 else
                 {
-                    break;
+                    isNumber = false;
                 }
-            }
+            } while (isNumber == false);
+            return ret;
         }
     }
 }

@@ -11,7 +11,6 @@ namespace task_4
         static void Main(string[] args)
         {
             Console.WriteLine("Ohjelma lajittelee luvut nousevaan järjestykseen.");
-
             Console.WriteLine("Syötä ensimmäinen luku: ");
             string numero1 = Console.ReadLine();
             int numx = int.Parse(numero1);
@@ -23,7 +22,6 @@ namespace task_4
             Console.WriteLine("Syötä kolmas luku: ");
             string numero3 = Console.ReadLine();
             int numz = int.Parse(numero3);
-
 
             if (numx < numy)
             {
@@ -61,7 +59,7 @@ namespace task_4
                     }
                 }
             }
-                Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
