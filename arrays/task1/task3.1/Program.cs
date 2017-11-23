@@ -16,13 +16,13 @@ namespace task3._1
             iT = new int[10];
             for (int i = 0; i < iT.Length; i++)
             {
-
+                iT[i] = rnd.Next(0, 20);
+                Console.WriteLine($"[{i}] = {iT[i]}");
             }
         }
-        static string numbers()
+        static int Numbers()
         {
 
         }
-
     }
 }
