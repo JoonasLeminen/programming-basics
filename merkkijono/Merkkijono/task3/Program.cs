@@ -13,12 +13,11 @@ namespace task3
             Console.WriteLine("Merkkijonoharjoitukset3");
             Console.WriteLine("Kirjoita jotain: ");
             string userInput = Console.ReadLine();
-            userInput.ToUpper();
             int k = 0;
 
             foreach (Char x in userInput)
             {
-                if (x == 'L')
+                if (x == 'l')
                     k++;
             }
 
