@@ -11,16 +11,15 @@ namespace task4
         static void Main(string[] args)
         {
             Console.WriteLine("Merkkijonoharjoitukset4");
-            Console.WriteLine("Kirjoita jotain: ");
+            Console.WriteLine("Kirjoita palindromi (Esim. saippuakivikauppias): ");
             string userInput = Console.ReadLine();
-            userInput.ToUpper();
-            string mirror;
+            string check = "";
 
-            for (int i = 0; i < userInput.Length; i++)
+            for (int i = userInput.Length - 1; i >= 0; i--)
             {
-                Console.Write(userInput[userInput.Length - i - 1]);
+                check += userInput[i];
             }
-            if (mirror == userInput)
+            if (userInput == check)
             {
                 Console.WriteLine($"Sana {userInput} on palintromi");
             }
